@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>MMT - Vendi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="MMT - venditore">
+        <meta name="author" content="Luca Camboni">
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <h1>MMT - mercato mezzi trasporto </h1>
+            <h2>l'E-commerce di <strong>veicoli a motore</strong> fra privati </h2>          
+            <nav>
+                <hr/>
+                <p>
+                    <a href="descrizione.html">HOME</a> |
+                    <a href="login.html">Login</a>
+                </p>
+                <hr/> 
+            </nav>
+        </header>
+        <div>
+            <h2>Inserisci informazioni prodotto</h2>
+            <form method="get"><!--per il momento uso il metodo get e non specifico action="venditore.html" perchè è di default-->
+                <p>
+                    <label for="name">Nome oggetto:</label>
+                    <input type="text" name="O_name" id="name" value=""/>
+                </p><p>
+                    <label for="url">URL immagine descrittiva:</label>
+                    <input type="url" name="U_foto" id="url" value="www.example.jpg"/>
+                </p><p>
+                    <label for="descr">Descrizione prodotto:</label>
+                    <textarea name="descrizione" id="descr" rows="4" cols="20" >Descrizione oggetto</textarea>
+                </p><p>
+                    <label for="price">Prezzo:</label>
+                    <input type="number" name="prezzo" id="price" value="0.00"/>
+                </p><p>
+                    <label for="quantity">quantità:</label>
+                    <input type="number" name="quantità" id="quantity" value="1"/>
+                </p><p>
+                    <input type="submit" value="Vendi"/>
+                </p>
+            </form>
+        </div>
     </body>
 </html>
